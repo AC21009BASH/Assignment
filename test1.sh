@@ -1,7 +1,7 @@
 #!/bin/bash
 #test1
 
-echo "		Menue"
+echo "		Menu"
 echo "Choose from these three options"
 echo "1.Add file"
 echo "2.Edit file"
