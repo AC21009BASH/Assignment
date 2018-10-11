@@ -21,6 +21,7 @@ read -p "Enter the name of the file to edit: " fileToEdit
 mkdir -p backups
 cp "$fileToEdit" "backups/"$fileToEdit
 
+# Open the file in nano editor
 nano $fileToEdit
 
 echo "$fileToEdit successfully edited."
