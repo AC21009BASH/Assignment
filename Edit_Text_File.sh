@@ -16,6 +16,11 @@ printf "\n\n"
 # from user
 read -p "Enter the name of the file to edit: " fileToEdit
 
+# Backup current version of the file to another directory
+# in the repository
+mkdir -p backups
+cp "$fileToEdit" "backups/"$fileToEdit
+
 nano $fileToEdit
 
-echo "$fileToEdit successfully edited.""
+echo "$fileToEdit successfully edited."
