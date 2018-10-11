@@ -57,7 +57,7 @@ show_menus() {
 	echo "4. Delete file"
 	echo "5. Edit File"
 	echo "6. View files in selected repository"
-	echo "7. Exit"
+	echo "0. Exit"
 }
 
 read_options() {
@@ -70,7 +70,7 @@ read_options() {
 		4) four ;;
 		5) five ;;
 		6) six ;;
-		7) exit 0;;
+		0) exit 0;;
 		*) echo -e "$[RED]Error...${STD}" && sleep 2
 	esac
 }	
