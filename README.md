@@ -10,7 +10,7 @@
   - [ ] 4.1 Store changes in log file (Data about change, who, when etc)
   - [ ] 4.2 Store changes in changes file (Actual changes)
 - [X] 5. Access multiple repositories
-- [ ] 6. Edit a text file within a repository
+- [X] 6. Edit a text file within a repository
 - [ ] 7. Input validation
 - [ ] 8. Automatically list the files in the repository
   - [ ] 8.1 Checked out files by the user
