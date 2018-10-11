@@ -6,19 +6,25 @@ STD='\033[0;0;39m'
 
 ## Code for when number one is selected
 one () {
-	source ./open_repository.sh
+	source ./create_file.sh
 	openRepo
 }
 
 ## Code for when number two is selected
 two() {
-	source ./create_repository.sh
-	create
+	source ./checkout_file.sh
+	checkoutFile
 }
 
-## Code for when number two is selected
+## Code for when number three is selected
 three() {
-	source ./delete_repository.sh
+	source ./view_checked_out.sh
+	viewCheckedOut
+}
+
+## Code for when number four is selected
+four() {
+	source ./delete_file.sh
 	delete
 }
 
