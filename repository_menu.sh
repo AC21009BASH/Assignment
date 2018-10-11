@@ -6,8 +6,8 @@ STD='\033[0;0;39m'
 
 ## Code for when number one is selected
 one () {
-	source ./create_file.sh
-	openRepo
+	source ./add_file.sh
+	add_file
 }
 
 ## Code for when number two is selected
@@ -28,7 +28,7 @@ four() {
 	delete
 }
 
-show_menus() {
+show_repo_menus() {
 	clear
 	echo "==================="	
 	echo " Repository Menu "
@@ -40,7 +40,7 @@ show_menus() {
 	echo "0. Exit"
 }
 
-read_options() {
+read_repo_options() {
 	local choice
 	read -p "Enter choice menu selection: " choice
 	case $choice in
@@ -52,10 +52,3 @@ read_options() {
 		*) echo -e "${RED}Error...${STD}" && sleep 2
 	esac
 }	
-
-while true
-do
-	show_menus
-	read_options
-done
-
