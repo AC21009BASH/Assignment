@@ -1,9 +1,11 @@
 #!/bin/bash
 # Script to select a text file and edit it
 
+clear
+
 ## Code here to navigate to correct repo
 
-cd TestRepo1
+cd TestRepo1/checked_out
 
 # Get list of files in directory 
 # for user to choose from
@@ -24,4 +26,8 @@ cp "$fileToEdit" "backups/"$fileToEdit
 # Open the file in nano editor
 nano $fileToEdit
 
+# Update the log file to show edit
+printf "$fileToEdit edited by $UID" >> ./repository.log
+
+# Notify the user that file has been edited
 echo "$fileToEdit successfully edited."

@@ -15,7 +15,7 @@
 - [ ] 8. Automatically list the files in the repository
   - [ ] 8.1 Checked out files by the user
 - [ ] 9. Add comments to log entries
-- [ ] 10. Make backup copies of files when edited
+- [X] 10. Make backup copies of files when edited
 
 
 - [ ] 11. Roll back changes
