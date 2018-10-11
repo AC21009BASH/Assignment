@@ -4,14 +4,10 @@
 RED='\033[0;41;30m'
 STD='\033[0;0;39m'
 
-pause() {
-	read -p "Press [Enter] key to continue..." fackEnterKey
-}
-
-##Code for when number one is selected
+## Code for when number one is selected
 one () {
-	echo "Add_file() called"
-		pause
+	source ./open_repository.sh
+	openRepo
 }
 
 ## Code for when number two is selected
@@ -22,14 +18,14 @@ two() {
 
 ## Code for when number two is selected
 three() {
-	echo "Add_file() called"
-		pause
+	source ./delete_repository.sh
+	delete
 }
 
 show_menus() {
 	clear
 	echo "==================="	
-	echo " Repository System "
+	echo " Main Menu "
 	echo "==================="
 	echo "1. Open repository"
 	echo "2. Create new repository"
