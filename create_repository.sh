@@ -7,10 +7,13 @@ create()
 	clear
 	local userInput
 	read -p "Enter what you'd like the repository to be called: " userInput
-	mkdir -p ./$userInput
+	mkdir -p Repositories/$userInput
 
-	cd "$userInput"
+	cd "Repositories/$userInput"
 
 	touch repository.log
 	mkdir backups
+	mkdir checked_out
+
+	cd ..
 }
