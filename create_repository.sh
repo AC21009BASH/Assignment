@@ -8,4 +8,9 @@ create()
 	local userInput
 	read -p "Enter what you'd like the repository to be called: " userInput
 	mkdir -p ./$userInput
+
+	cd "$userInput"
+
+	touch repository.log
+	mkdir backups
 }
