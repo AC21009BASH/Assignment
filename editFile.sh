@@ -22,10 +22,6 @@ nano $fileToEdit
 DATE=$(date +"%Y-%m-%d")
 TIME=$(date +"%H:%M:%S")
 
-printf "$USER $UID edited the file $fileToEdit in the repository ${PWD##*/} \t\t\t\t $DATE at $TIME\n" >>repository.log;;
-
-
-# Notify the user that file has been edited
-echo "$fileToEdit successfully edited."
+printf "$USER $UID edited the file $fileToEdit in the repository ${PWD##*/} \t\t\t\t $DATE at $TIME\n" >> "../repository.log"
 
 cd ..

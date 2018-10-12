@@ -10,4 +10,4 @@ touch $fileToAdd
 DATE=$(date +"%Y-%m-%d")
 TIME=$(date +"%H:%M:%S")
 
-printf "\n $fileToAdd was added to directory ${PWD##*/}\t\t $DATE at $TIME\n" >> repository.log
+printf "$fileToAdd was added to directory ${PWD##*/}\t\t $DATE at $TIME\n" >> repository.log

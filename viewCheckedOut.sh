@@ -9,7 +9,7 @@ printf "Currently Checked Out Files: \n\n"
 ls -w1
 printf "\n"
 
-printf "$USER $UID viewed the checked out files\t\t\t\t $DATE at $TIME\n" >>repository.log 
+printf "$USER $UID viewed the checked out files\t\t\t\t $DATE at $TIME\n" >> "../repository.log" 
 
 cd ..
 

@@ -11,6 +11,6 @@ read -p "Enter the name of a file to check in: " toCheckIn
 
 mv "$toCheckIn" "../"$toCheckIn
 
-printf "$USER $UID checked the file $toCheckIn\t\t\t $DATE at $TIME\n" >>repository.log 
+printf "$USER $UID checked the file $toCheckIn in \t\t\t $DATE at $TIME\n" >> repository.log 
 
 cd ..
