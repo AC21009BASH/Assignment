@@ -1,38 +1,45 @@
 #!/bin/bash
 
+# Function for when addFile is selected
 addFile() {
 	. ../../addFile.sh
 }
 
+# Function for when checkoutFile is selected in menu
 checkoutFile() {
 	. ../../checkoutFile.sh
 }
 
+# Function for when viewCheckedOut is selected in menu
 viewCheckedOut() {
 	. ../../viewCheckedOut.sh
 }
 
+# Function for when checkFileBackIn is selected in menu
 checkFileBackIn() {
 	. ../../checkFileBackIn.sh
 }
 
+# Function for when editFile is selected in menu
 editFile() {
 	. ../../editFile.sh
 }
 
+# Function for when deleteFile is selected in menu
 deleteFile() {
 	. ../../deleteFile.sh
 }
 
+# Function for when returnToMainMenu is selected in menu
 returnToMainMenu() {
 
 	cd ../../
 	. ./mainMenu.sh
 }
 
+# Function to print menu options to the user
 printRepoMenu() {
 	clear
-	#pwd
 	echo "==================="	
 	echo " Changes to $selectedRepo "
 	echo "==================="
@@ -45,6 +52,7 @@ printRepoMenu() {
 	echo "0. Return To Main Menu"
 }
 
+# Function to get the option selected by the user
 getRepoOption() {
 	local repoOption
 	read -p "Please select an option from the menu: " repoOption
@@ -60,6 +68,7 @@ getRepoOption() {
 	esac
 }
 
+# Makes the menu run when until the user requests to exit
 while [ $choice != 0 ]
 do
 	printRepoMenu
