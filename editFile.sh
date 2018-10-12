@@ -5,7 +5,7 @@ clear
 cd checked_out
 
 printf "The below files are available to edit: \n\n"
-ls -w1
+ls -w1 -I "repository.log" -I "checked_out" -I "backups" -I "repositories.log"
 printf "\n"
 
 # Get file to be edited

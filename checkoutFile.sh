@@ -2,7 +2,7 @@
 
 clear
 
-ls -w1
+ls -w1 -I "repository.log" -I "checked_out" -I "backups" -I "repositories.log"
 printf "\n \n"
 
 read -p "Enter the name of a file to checkout: " toCheckout

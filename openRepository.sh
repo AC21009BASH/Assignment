@@ -7,8 +7,8 @@ clear
 cd Repositories
 
 printf "Available repositories: \n \n"
-ls -w1
-printf "\n \n"
+ls -w1 -I "repository.log" -I "checked_out" -I "backups" -I "repositories.log"
+printf "\n"
 # Ask the user to enter the repository they want to access
 read -p "Enter the name of the repository to access: " selectedRepo
 
