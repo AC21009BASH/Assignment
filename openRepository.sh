@@ -15,4 +15,7 @@ read -p "Enter the name of the repository to access: " selectedRepo
 # Move to the repository selected
 cd "$selectedRepo"
 
+printf "$USER $UID opened the repository $selectedRepo\t\t\t\t $DATE at $TIME\n" >> "../repositories.log"
+
+
 . ../../repositoryMenu.sh
