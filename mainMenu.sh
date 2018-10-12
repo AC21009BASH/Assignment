@@ -1,17 +1,21 @@
 #!/bin/bash
 
+# Function when Create New is selected in menu
 createNew() {
 	. ./createRepository.sh
 }
 
+# Function when Open repository is selected
 openRepo() {
 	. ./openRepository.sh
 }
 
+# Function when delete repository is selected
 deleteRepo() {
 	. ./deleteRepository.sh
 }
 
+# Method to print the menu options to the user
 printMenu() {
 	clear
 	#pwd
@@ -24,6 +28,7 @@ printMenu() {
 	echo "0. Exit"
 }
 
+# Method to get the users selection
 getUserChoice() {
 	local choice
 	read -p "Please select an option from the menu: " choice
