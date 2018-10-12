@@ -14,7 +14,7 @@ deleteRepo() {
 
 printMenu() {
 	clear
-	pwd
+	#pwd
 	echo "==================="	
 	echo " Repository System "
 	echo "==================="

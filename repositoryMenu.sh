@@ -32,7 +32,7 @@ returnToMainMenu() {
 
 printRepoMenu() {
 	clear
-	pwd
+	#pwd
 	echo "==================="	
 	echo " Changes to $selectedRepo "
 	echo "==================="
